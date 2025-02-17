@@ -1,18 +1,19 @@
 from modelos.restaurante import Restaurante
+from modelos.cardapio.bebida import Bebida
+from modelos.cardapio.prato import Prato
 
 
-restaurante1 = Restaurante('tiktok', 'Dançante')
-restaurante1.receber_avaliacao('Nunes', 9)
-restaurante1.receber_avaliacao('Fabricia', 7)
-restaurante2 = Restaurante('AmricanFood', 'Comida Americana')
-restaurante3 = Restaurante('XFood', 'Japones')
 
-restaurante2.alternar_estado()
+restaurante = Restaurante('XFood', 'Japones')
+bebida_suco = Bebida('Suco de Limão', 5.0, 'grande')
+prato = Prato('Coxinha', 8, 'Coxinha com catupiry')
+
 
 
 
 def main():
-    Restaurante.listar_restaurantes()
+    print(bebida_suco)
+    print(prato)
 
 if __name__ == '__main__':
     main ()
